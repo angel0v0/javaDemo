@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xdb?serverTimezone=UTC&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1204468375
+  redis:
+    host: 123.57.128.140
+    port: 6379
+    password: 123456
+
+#mybatis 日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix:     #配置mybatis表的默认前缀
+      id-type: auto     #配置MyBatis-Plus的主键策略
+
+#端口
+server:
+  port: 9999
+
+

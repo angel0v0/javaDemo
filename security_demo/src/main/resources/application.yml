@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/xdb?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 1204468375
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+  redis:
+    host: 123.57.128.140
+    port: 6379
+    password: 123456
